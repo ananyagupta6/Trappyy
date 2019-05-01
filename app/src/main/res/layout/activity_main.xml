@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimaryLight">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_marginTop="48dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:padding="32dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="50sp"
+            android:layout_weight="1.14" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/colorPrimaryLight"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    android:layout_height="wrap_content">
+                    <EditText android:id="@+id/email_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginBottom="8dp"
+                        android:hint="Email" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:padding="4dp"
+                    card_view:passwordToggleEnabled="true"
+                    android:layout_height="wrap_content">
+                    <EditText android:id="@+id/password_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:layout_marginBottom="8dp"
+                        android:hint="Password"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView android:id="@+id/forgot_pass_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password ?"
+                    android:onClick="forgotPassword"
+                    android:layout_margin="8dp"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorAccent"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/custom_signin_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:tag="custom_login_button"
+                    android:text="Sign in"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/google_login_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/red"
+                    android:drawableLeft="@drawable/ic_google_plus_white_36dp"
+                    android:drawableStart="@drawable/ic_google_plus_white_36dp"
+                    android:tag="google_login_button"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:text="Continue with Google"
+                    android:textColor="@color/white"
+                    android:paddingRight="36dp"
+                    />
+
+                <TextView android:id="@+id/link_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="startSignUpActivity"
+                    android:text="No Account yet? Click here."
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent"/>
+
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>

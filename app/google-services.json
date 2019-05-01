@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "591907888973",
+    "firebase_url": "https://trappyy-d73af.firebaseio.com",
+    "project_id": "trappyy-d73af",
+    "storage_bucket": "trappyy-d73af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591907888973:android:f383815dfc081ce4",
+        "android_client_info": {
+          "package_name": "com.example.ananyagupta.trappyy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591907888973-vcr9mtkuaft8mk3jn167bilad6h2747t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ananyagupta.trappyy",
+            "certificate_hash": "7cad8200cf2c5f0a9a7b300445c9693b5f62025f"
+          }
+        },
+        {
+          "client_id": "591907888973-01q6iu64ntc83ovn8bsf006n13gmejjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO9WUZiJ548iHGTPGx_IFvy8wL0iBKfNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591907888973-01q6iu64ntc83ovn8bsf006n13gmejjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
